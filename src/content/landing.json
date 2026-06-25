@@ -1,0 +1,381 @@
+{
+  "hero": {
+    "eyebrow": "AI Analytics Workspace",
+    "heading": "Turn Your Data into a Business Expert",
+    "rotatingWords": [
+      "Analyst",
+      "Advisor",
+      "Engine"
+    ],
+    "subtitle": "Most AI analytics tools connect to your data and stop there. xFalcon adds domain expertise, institutional memory, and guardrails that prevent the analytical mistakes that cost real money.",
+    "ctaText": "Book a demo →",
+    "ctaHref": "mailto:info@iseyon.com?subject=Request%20a%20Demo"
+  },
+  "whatIs": {
+    "text": "xFalcon is an AI analytics workspace that comes pre-trained on your industry — ready to surface decisions, not just charts."
+  },
+  "why": {
+    "points": [
+      { "title": "Domain Expertise", "description": "Pre-built industry knowledge specific to retail, healthcare, finance, manufacturing, and more." },
+      { "title": "Built-In Business Logic", "description": "Encodes guardrails and proven analysis patterns so teams avoid analytical mistakes." },
+      { "title": "Industry Intelligence", "description": "Institutional knowledge embedded into every analysis — so users get context, not just numbers." },
+      { "title": "Analytics Guardrails", "description": "Automated checks that prevent misleading visualizations and flawed comparisons before they happen." },
+      { "title": "Faster Time-to-Value", "description": "Industry-ready analytics experiences that reduce setup time and accelerate insights." }
+    ]
+  },
+  "socialProof": {
+    "text": "Built as a browser-native replacement for desktop-style agent workflows with first-class MCP integration.",
+    "logos": [
+      "Chat-first UX",
+      "MCP-native",
+      "Skill-aware",
+      "Provider-flexible",
+      "Run traceability",
+      "Data-analyst ready"
+    ]
+  },
+  "overview": {
+    "heading": "Chat Is the Primary Surface, MCP Is First-Class",
+    "content": "The MVP is intentionally scoped as a browser-native chat workspace rather than a visual workflow builder. The core architecture prioritizes run traceability, provider flexibility, tool transparency, and reusable skills.\n\nFixed decisions in the docs define MCP as non-negotiable across UI, runtime, storage, and permissions, with a deep integration path for the existing data-analyst backend.",
+    "imageSrc": "/Screenshot 2026-03-12 120450.png"
+  },
+  "features": {
+    "heading": "MVP Capabilities Aligned to the Product Spec",
+    "description": "Chat-first operations with deep MCP visibility, provider flexibility, and skill-aware executions",
+    "gridLayout": true,
+    "items": [
+      {
+        "title": "Persistent Chat + Streaming",
+        "description": "Run SSE-based chat with persistent threads, reopen past conversations, and continue from saved context.",
+        "icon": "users"
+      },
+      {
+        "title": "Multi-Provider Model Layer",
+        "description": "Use OpenRouter, Anthropic Direct, and OpenAI Direct through a provider-scoped model selection flow.",
+        "icon": "zap"
+      },
+      {
+        "title": "MCP Server Registry",
+        "description": "Register MCP servers, run health checks, discover tools automatically, and attach servers per chat.",
+        "icon": "sliders"
+      },
+      {
+        "title": "Tool Execution Timeline",
+        "description": "Inspect tool input, output, status, and raw request/response data directly in the chat timeline.",
+        "icon": "activity"
+      },
+      {
+        "title": "Approval + Permission Controls",
+        "description": "Use allow/ask/deny policies and pause execution for explicit user approval on privileged actions.",
+        "icon": "smile"
+      },
+      {
+        "title": "Skill-Aware Runtime Path",
+        "description": "Import and enable markdown skills per chat, with compatibility targets for data-analyst, OpenCode, and Claude formats.",
+        "icon": "shield"
+      }
+    ]
+  },
+  "benefits": {
+    "heading": "Why Teams Choose xFalcon",
+    "subheading": "Built for clarity, control, and reliable delivery in every run.",
+    "items": [
+      {
+        "title": "Clear Run Visibility",
+        "description": "Track decisions, tool calls, and outputs in one readable timeline."
+      },
+      {
+        "title": "Provider Flexibility",
+        "description": "Switch providers and models per use case without changing your workflow."
+      },
+      {
+        "title": "Safe Execution Controls",
+        "description": "Use approvals and permission policies before sensitive actions execute."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Typical First-Run Flow",
+    "items": [
+      {
+        "step": "1",
+        "title": "Create a new chat and select a models",
+        "description": "Begin in the chat-first UI and choose the provider/model combination for the current thread.",
+        "icon": "user-plus"
+      },
+      {
+        "step": "2",
+        "title": "Attach MCP servers for the session",
+        "description": "Enable one or more MCP servers and verify tool discovery before execution.",
+        "icon": "upload"
+      },
+      {
+        "step": "3",
+        "title": "Enable required skills",
+        "description": "Turn on relevant skills for the chat so the runtime can load them on demand.",
+        "icon": "settings"
+      },
+      {
+        "step": "4",
+        "title": "Run tasks with tool and approval visibility",
+        "description": "Watch streaming output, inspect tool cards, and approve or deny sensitive actions when prompted.",
+        "icon": "check-circle"
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Choose the Right Plan for Your Agent Workspace",
+    "items": [
+      {
+        "name": "Starter",
+        "price": "$19",
+        "period": "/month",
+        "description": "For solo builders getting started with chat-based agent workflows.",
+        "popular": false,
+        "ctaText": "Start Free Trial",
+        "features": [
+          "Up to 3 active projects",
+          "Basic conversation history",
+          "Email support",
+          "Single user seat",
+          "Core model access"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "$49",
+        "period": "/month",
+        "description": "For growing teams running production workflows with MCP tools.",
+        "popular": true,
+        "ctaText": "Upgrade to Growth",
+        "features": [
+          "Unlimited projects",
+          "Team workspaces",
+          "Priority support",
+          "Advanced model routing",
+          "MCP server integrations"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$199+",
+        "period": "",
+        "description": "For organizations needing advanced security, compliance, and scale.",
+        "popular": false,
+        "ctaText": "Contact Sales",
+        "features": [
+          "SSO and role-based access",
+          "Private deployment options",
+          "Custom SLAs",
+          "Dedicated success manager",
+          "Audit logs and compliance controls"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Core Product Principles",
+    "items": [
+      {
+        "company": "MVP Docs",
+        "logo": null,
+        "quote": "MCP is non-negotiable and must be a first-class concept across UI, runtime, storage, and permissions.",
+        "author": "xfalcon-web",
+        "role": "Fixed Decision",
+        "avatar": null
+      },
+      {
+        "company": "MVP Docs",
+        "logo": null,
+        "quote": "The product must expose execution state, tool calls, approvals, and artifacts instead of hiding them.",
+        "author": "xfalcon-web",
+        "role": "Fixed Decision",
+        "avatar": null
+      },
+      {
+        "company": "MVP Spec",
+        "logo": null,
+        "quote": "Build a chat-based web application that lets a user interact with their own agent runtime, model provider, MCP servers, and skills in one browser workspace.",
+        "author": "xfalcon-web",
+        "role": "Goal",
+        "avatar": null
+      },
+      {
+        "company": "MVP Scope",
+        "logo": null,
+        "quote": "The MVP is a browser-native replacement for the current desktop-style agent experience, with strong traceability and configuration.",
+        "author": "xfalcon-web",
+        "role": "Scope",
+        "avatar": null
+      },
+      {
+        "company": "MVP Scope",
+        "logo": null,
+        "quote": "Not a visual workflow/canvas builder and not a no-code automation studio in this MVP.",
+        "author": "xfalcon-web",
+        "role": "Out of Scope",
+        "avatar": null
+      },
+      {
+        "company": "Roadmap",
+        "logo": null,
+        "quote": "Skills Registry is in progress and Data-Analyst Integration is the flagship next major phase.",
+        "author": "xFalcon-web",
+        "role": "Delivery Status",
+        "avatar": null
+      }
+    ]
+  },
+  "demosSection": {
+    "eyebrow": "22+ Industry-Ready Analytics Experiences",
+    "heading": "Industry-Ready Analytics Solutions",
+    "subheading": "Not templates—pre-built intelligence designed to solve real business problems across multiple industries.",
+    "primaryButtonLabel": "Request a Demo",
+    "secondaryButtonLabel": "Visit Full Demo"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is xFalcon-web in this MVP?",
+        "answer": "It is a chat-based web application for interacting with your own agent runtime, model providers, MCP servers, and skills in one browser workspace."
+      },
+      {
+        "question": "Is MCP optional in this product?",
+        "answer": "No. The docs define MCP as a first-class, non-negotiable capability across the UI, runtime, storage, and permission model."
+      },
+      {
+        "question": "Which model providers are currently supported?",
+        "answer": "Current implementation supports OpenRouter, Anthropic Direct, and OpenAI Direct through a provider abstraction layer."
+      },
+      {
+        "question": "Can I inspect tool execution details during a run?",
+        "answer": "Yes. The UI includes tool timeline cards, input/output and status visibility, and an expandable raw request/response inspector."
+      },
+      {
+        "question": "Are skills supported in the MVP?",
+        "answer": "Yes. Skills are first-class and currently in progress for registry/import/enablement, with compatibility targets for data-analyst, OpenCode, and Claude skill formats."
+      },
+      {
+        "question": "What is out of scope for this MVP?",
+        "answer": "Out-of-scope items include a drag-and-drop workflow builder, marketplace/public skill exchange, large-scale org admin, and billing/usage charging UI."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "See xFalcon in Action",
+    "description": "Choose a low-friction next step: request a demo, book a consultation, or contact sales — we’ll help you explore relevant industry experiences and next steps.",
+    "primaryCTA": {
+      "text": "Book a demo →",
+      "href": "mailto:info@iseyon.com?subject=Request%20a%20Demo"
+    },
+    "secondaryCTA": {
+      "text": "Book a Consultation",
+      "href": "mailto:info@iseyon.com?subject=Book%20a%20Consultation"
+    }
+  },
+  "contactInfo": {
+    "email": "info@iseyon.com",
+    "whatsappDisplay": "6515039126",
+    "whatsappLink": "tel:6515039126",
+    "twitterLink": "https://twitter.com/xfalconai",
+    "instagramLink": "https://instagram.com/xfalconai"
+  },
+  "demoDetail": {
+    "backLabel": "Back",
+    "visitLabel": "Visit Full Demo",
+    "aboutHeading": "About",
+    "aboutFallbackDescription": "Explore this demo to see the complete workflow and outputs.",
+    "previewFallbackLabel": "About this demo preview is not available",
+    "contactHeading": "Contact Us",
+    "contactDescription": "Click below to open your mailbox and email our team directly.",
+    "contactButtonText": "Request Access",
+    "contactSubjectPrefix": "xFalcon demo inquiry"
+  },
+  "footer": {
+    "logoSrc": "/brand/logo/mark_white_on_dark_1024.png",
+    "logoAlt": "xFalcon logo",
+    "companyName": "xFalcon",
+    "companyDescription": "Most AI analytics tools connect to your data and stop there. xFalcon adds domain expertise, institutional memory, and guardrails that prevent the analytical mistakes that cost real money.",
+    "sections": [
+      {
+        "title": "Navigate",
+        "links": [
+          {
+            "label": "Demos",
+            "href": "#demos"
+          },
+          {
+            "label": "About",
+            "href": "#overview"
+          },
+          {
+            "label": "FAQ",
+            "href": "#faq"
+          },
+          {
+            "label": "Contact Us",
+            "href": "#contact"
+          }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy-policy"
+          },
+          {
+            "label": "Terms & Conditions",
+            "href": "/terms-and-conditions"
+          },
+          {
+            "label": "Security & Trust",
+            "href": "/security-and-trust"
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "links": [
+          {
+            "label": "Email: info@iseyon.com",
+            "href": "mailto:info@iseyon.com"
+          },
+          {
+            "label": "Contact No: +1 651 503 9126",
+            "href": "tel:16515039126"
+          },
+          {
+            "label": "Book Demo Discussion",
+            "href": "mailto:info@iseyon.com?subject=Book%20a%20demo%20discussion"
+          },
+          {
+            "label": "Response Time: 1 business day",
+            "href": "#contact"
+          }
+        ]
+      }
+    ],
+    "socialLinks": [
+      {
+        "label": "Twitter",
+        "href": "https://twitter.com/xfalconai"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com/xfalconai"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/16515039126"
+      },
+      {
+        "label": "Mail",
+        "href": "mailto:info@iseyon.com"
+      }
+    ],
+    "copyright": "© 2025-2026 xFalcon. All rights reserved."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Privacy Policy",
+  "description": "Learn how xFalcon collects, uses, and protects your data.",
+  "lastUpdated": "2025-01-01",
+  "sections": [
+    {
+      "id": "information-we-collect",
+      "title": "Information We Collect",
+      "content": "xFalcon collects information you provide directly — such as account details, prompts, and feedback — and information generated automatically through your use of the service, including usage data and analytics. Users are responsible for ensuring that any data uploaded or connected to the platform has been collected lawfully and with appropriate authorisation.",
+      "subsections": []
+    },
+    {
+      "id": "how-we-use",
+      "title": "How We Use Your Information",
+      "content": "We use collected information to operate and improve the platform, personalise your experience, and communicate with you about the service. xFalcon does not sell your data to third parties. Information is shared only where required by law or with service providers acting on our behalf under confidentiality obligations.",
+      "subsections": []
+    },
+    {
+      "id": "data-security",
+      "title": "Data Security & Confidentiality",
+      "content": "xFalcon implements reasonable technical and organisational measures to protect your data. Users are responsible for maintaining the confidentiality of their credentials and ensuring that only authorised personnel access the platform and any connected or uploaded data. Unauthorised disclosure or misuse of data may result in legal action under applicable agreements.",
+      "subsections": []
+    }
+  ],
+  "contactSection": {
+    "title": "Privacy Team",
+    "email": "info@iseyon.com",
+    "ContactNo": "6515039126",
+    "address": "New York | New Jersey | Minnesota | California | Washington | Bangalore"
+  }
+}

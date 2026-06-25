@@ -1,0 +1,13 @@
+export { HeroSection } from './HeroSection';
+export { SocialProof } from './SocialProof';
+export { FeaturesSection } from './FeaturesSection';
+export { OverviewSection } from './OverviewSection';
+export { StepsSection } from './StepsSection';
+export { PricingSection } from './PricingSection';
+export { TestimonialsSection } from './TestimonialsSection';
+export { DemosSection } from './DemosSection';
+export { FAQSection } from './FAQSection';
+export { CTASection } from './CTASection';
+export { FooterSection } from './FooterSection';
+export { HowItWorksSection } from './HowItWorksSection';
+export { ThemeToggle } from './ThemeToggle';

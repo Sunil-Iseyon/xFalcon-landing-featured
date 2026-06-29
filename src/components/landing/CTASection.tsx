@@ -59,7 +59,7 @@ export function CTASection({ heading, description, contactEmail, primaryCTA, sec
 
         <MotionReveal delay={0.16}>
           <h2
-            className="font-display text-4xl font-bold lg:text-5xl"
+            className="font-display text-3xl sm:text-4xl font-bold lg:text-5xl"
             style={{ letterSpacing: '-0.02em', color: 'var(--text)' }}
           >
             {heading}
@@ -73,7 +73,7 @@ export function CTASection({ heading, description, contactEmail, primaryCTA, sec
         </MotionReveal>
 
         <MotionReveal delay={0.3}>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <a
               href={contactHref}
               target={contactHref.startsWith('http') ? '_blank' : undefined}

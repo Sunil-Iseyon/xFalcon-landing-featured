@@ -34,7 +34,7 @@ export function StepsSection({ heading, items }: StepsSectionProps) {
           </MotionReveal>
         </div>
         <MotionReveal delay={0.08}>
-          <h2 className="text-4xl lg:text-5xl font-black text-[#0B1220] text-center" style={{ letterSpacing: '-0.02em' }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1220] text-center" style={{ letterSpacing: '-0.02em' }}>
             {heading}
           </h2>
         </MotionReveal>
@@ -47,7 +47,7 @@ export function StepsSection({ heading, items }: StepsSectionProps) {
               <MotionReveal
                 key={index}
                 delay={index * 0.1}
-                className="group flex gap-8 p-8 rounded-2xl bg-background border border-[#D7DEE8] hover:border-[#2ED1ED] transition-all duration-300 hover:shadow-[0_14px_32px_rgba(6,17,34,0.10)]"
+                className="group flex gap-4 sm:gap-8 p-5 sm:p-8 rounded-2xl bg-background border border-[#D7DEE8] hover:border-[#2ED1ED] transition-all duration-300 hover:shadow-[0_14px_32px_rgba(6,17,34,0.10)]"
               >
                 {/* Step number and icon */}
                 <div className="shrink-0 flex flex-col items-center gap-4">

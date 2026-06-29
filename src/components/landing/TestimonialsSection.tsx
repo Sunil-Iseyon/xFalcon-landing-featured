@@ -18,7 +18,7 @@ export function TestimonialsSection({ heading, items }: TestimonialsSectionProps
   return (
     <section className="py-20 lg:py-32 px-4 md:px-8 lg:px-12 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto space-y-16">
-        <h2 className="text-4xl lg:text-5xl font-black text-gray-900 text-center" style={{ letterSpacing: '-0.02em' }}>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 text-center" style={{ letterSpacing: '-0.02em' }}>
           {heading}
         </h2>
 
@@ -27,7 +27,7 @@ export function TestimonialsSection({ heading, items }: TestimonialsSectionProps
           {items.map((testimonial, index) => (
             <div
               key={index}
-              className="group p-8 rounded-3xl bg-white/70 backdrop-filter backdrop-blur-lg border border-white/30 hover:border-red-500/50 transition-all duration-300 hover:shadow-xl animate-stagger-in"
+              className="group p-5 sm:p-8 rounded-3xl bg-white/70 backdrop-filter backdrop-blur-lg border border-white/30 hover:border-red-500/50 transition-all duration-300 hover:shadow-xl animate-stagger-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Company logo or badge */}

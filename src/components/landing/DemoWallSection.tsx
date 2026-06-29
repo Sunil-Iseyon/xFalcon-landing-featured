@@ -44,7 +44,7 @@ export function DemoWallSection({ items, total }: DemoWallSectionProps) {
         </div>
 
         {/* Demo wall grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-20" style={{ marginBottom: '2.75rem' }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8 md:mt-20" style={{ marginBottom: '2.75rem' }}>
           {wall.map((demo, i) => (
             <a
               key={demo.path}

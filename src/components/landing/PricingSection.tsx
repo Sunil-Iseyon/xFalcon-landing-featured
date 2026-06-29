@@ -31,7 +31,7 @@ export function PricingSection({ heading, items }: PricingSectionProps) {
           </MotionReveal>
         </div>
         <MotionReveal delay={0.08}>
-          <h2 className="text-4xl lg:text-5xl font-black text-gray-900 text-center" style={{ letterSpacing: '-0.02em' }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 text-center" style={{ letterSpacing: '-0.02em' }}>
             {heading}
           </h2>
         </MotionReveal>
@@ -44,7 +44,7 @@ export function PricingSection({ heading, items }: PricingSectionProps) {
               delay={index * 0.1}
               className={`group relative rounded-3xl transition-all duration-300 ${
                 plan.popular
-                  ? 'bg-linear-to-b from-[#2ED1ED] to-[#229CB1] text-white scale-105 md:scale-110 shadow-2xl'
+                  ? 'bg-linear-to-b from-[#2ED1ED] to-[#229CB1] text-white md:scale-105 lg:scale-110 shadow-2xl'
                   : 'bg-white border border-gray-200 hover:border-gray-300 text-gray-900'
               }`}
             >

@@ -27,7 +27,7 @@ export function BenefitsSection({
             </p>
           </MotionReveal>
           <MotionReveal delay={0.08}>
-            <h2 className="text-4xl lg:text-5xl font-black text-[#0B1220]" style={{ letterSpacing: '-0.02em' }}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1220]" style={{ letterSpacing: '-0.02em' }}>
               {heading}
             </h2>
           </MotionReveal>

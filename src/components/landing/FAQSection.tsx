@@ -28,7 +28,7 @@ export function FAQSection({ heading, items }: FAQSectionProps) {
           </MotionReveal>
         </div>
         <MotionReveal delay={0.08}>
-          <h2 className="text-center text-4xl font-black text-[#0B1220] lg:text-5xl" style={{ letterSpacing: '-0.02em' }}>
+          <h2 className="text-center text-3xl sm:text-4xl font-black text-[#0B1220] lg:text-5xl" style={{ letterSpacing: '-0.02em' }}>
             {heading}
           </h2>
         </MotionReveal>
@@ -43,7 +43,7 @@ export function FAQSection({ heading, items }: FAQSectionProps) {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="flex w-full items-center justify-between bg-white px-6 py-6 transition-colors hover:bg-[#F6FBFF]"
+                className="flex w-full items-center justify-between bg-white px-4 py-4 sm:px-6 sm:py-6 transition-colors hover:bg-[#F6FBFF]"
               >
                 <h3 className="text-left text-lg font-semibold text-[#0B1220]">{item.question}</h3>
                 <div className="shrink-0 ml-4 text-[#2ED1ED]">
@@ -52,7 +52,7 @@ export function FAQSection({ heading, items }: FAQSectionProps) {
               </button>
 
               {openIndex === index && (
-                <div className="animate-fade-in bg-[#F6FBFF] px-6 pb-6">
+                <div className="animate-fade-in bg-[#F6FBFF] px-4 pb-4 sm:px-6 sm:pb-6">
                   <p className="leading-relaxed text-[#42526B]">{item.answer}</p>
                 </div>
               )}

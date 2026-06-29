@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { memo, useMemo, useRef, useState } from 'react';
 import { MotionReveal } from '@/components/landing/MotionReveal';
 import type { DemoEntry } from '@/lib/content';
@@ -29,56 +28,52 @@ function getWaveDelay(index: number): number {
 interface DemoCardProps {
   demo: DemoEntry;
   delay: number;
-  showNewTag: boolean;
 }
 
-const DemoCard = memo(function DemoCard({ demo, delay, showNewTag }: DemoCardProps) {
+const DemoCard = memo(function DemoCard({ demo, delay }: DemoCardProps) {
   return (
     <MotionReveal delay={delay} className="h-full">
       <a
         href={demo.path}
         target="_blank"
         rel="noopener noreferrer"
-        className="group relative flex h-full flex-col rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2ED1ED] focus-visible:ring-offset-2"
+        className="group flex h-full flex-col rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2ED1ED] focus-visible:ring-offset-2"
         style={{
           background: 'var(--surface-raised)',
           border: '1px solid var(--border)',
         }}
       >
-        {showNewTag && (
-          <span
-            className="absolute left-3 top-3 z-10 rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em]"
-            style={{ background: 'rgba(46,209,237,0.15)', color: 'var(--accent-glow)', border: '1px solid rgba(46,209,237,0.3)' }}
-          >
-            New
-          </span>
-        )}
-
-        {/* Thumbnail or empty placeholder */}
-        {demo.thumbnail ? (
-          <div
-            className="relative mb-3 h-36 w-full overflow-hidden rounded-xl"
-            style={{ background: 'var(--surface)' }}
-          >
-            <Image
-              src={demo.thumbnail}
-              alt={demo.title}
-              fill
-              sizes="(min-width: 1024px) 30rem, (min-width: 768px) 50vw, 100vw"
-              className="object-cover"
-            />
+        {/* Category + FEATURED chips row */}
+        {(demo.category || demo.featured) && (
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            {demo.category && (
+              <span
+                className="rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest"
+                style={{
+                  fontFamily: 'ui-monospace, monospace',
+                  color: 'var(--accent-glow)',
+                  background: 'rgba(46,209,237,0.10)',
+                  border: '1px solid rgba(46,209,237,0.20)',
+                }}
+              >
+                {demo.category}
+              </span>
+            )}
+            {demo.featured && (
+              <span
+                className="rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest"
+                style={{
+                  fontFamily: 'ui-monospace, monospace',
+                  color: 'var(--text)',
+                  background: 'rgba(255,255,255,0.08)',
+                  border: '1px solid rgba(255,255,255,0.18)',
+                }}
+              >
+                Featured
+              </span>
+            )}
           </div>
-        ) : null}
-
-        {/* Category chip */}
-        {demo.category ? (
-          <span
-            className="mb-2 self-start rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest"
-            style={{ fontFamily: 'ui-monospace, monospace', color: 'var(--accent-glow)', background: 'rgba(46,209,237,0.10)', border: '1px solid rgba(46,209,237,0.20)' }}
-          >
-            {demo.category}
-          </span>
-        ) : null}
+        )}
 
         <h3 className="text-base font-bold leading-snug" style={{ color: 'var(--text)' }}>
           {demo.title}
@@ -90,12 +85,15 @@ const DemoCard = memo(function DemoCard({ demo, delay, showNewTag }: DemoCardPro
           </p>
         ) : null}
 
-        <span
-          className="mt-3 text-sm font-semibold transition-colors group-hover:opacity-80"
-          style={{ color: 'var(--accent-glow)' }}
-        >
-          View demo →
-        </span>
+        {/* Right-aligned CTA */}
+        <div className="mt-4 flex justify-end">
+          <span
+            className="text-sm font-semibold transition-opacity group-hover:opacity-70"
+            style={{ color: 'var(--accent-glow)' }}
+          >
+            View demo →
+          </span>
+        </div>
       </a>
     </MotionReveal>
   );
@@ -132,8 +130,6 @@ export function DemosSection({
 
   const normalizedSearch = searchQuery.trim().toLowerCase();
   const isDefaultMobileCarousel = selectedCategory === 'All' && normalizedSearch.length === 0;
-
-  const recentPaths = useMemo(() => new Set(items.slice(0, 3).map((i) => i.path)), [items]);
 
   const filteredItems = useMemo(() =>
     items.filter((item) => {
@@ -301,7 +297,7 @@ export function DemosSection({
                   <div className="flex snap-x snap-mandatory gap-4 pb-2">
                     {filteredItems.map((demo, i) => (
                       <div key={demo.path} className="w-[84%] shrink-0 snap-center">
-                        <DemoCard demo={demo} delay={getWaveDelay(i)} showNewTag={recentPaths.has(demo.path)} />
+                        <DemoCard demo={demo} delay={getWaveDelay(i)} />
                       </div>
                     ))}
                   </div>
@@ -309,7 +305,7 @@ export function DemosSection({
               ) : (
                 <div className="grid grid-cols-1 gap-5">
                   {filteredItems.map((demo, i) => (
-                    <DemoCard key={demo.path} demo={demo} delay={getWaveDelay(i)} showNewTag={recentPaths.has(demo.path)} />
+                    <DemoCard key={demo.path} demo={demo} delay={getWaveDelay(i)} />
                   ))}
                 </div>
               )}
@@ -318,7 +314,7 @@ export function DemosSection({
             {/* Desktop grid */}
             <div className="hidden pt-2 grid-cols-1 gap-5 md:grid md:grid-cols-2 lg:grid-cols-3">
               {filteredItems.map((demo, i) => (
-                <DemoCard key={demo.path} demo={demo} delay={getWaveDelay(i)} showNewTag={recentPaths.has(demo.path)} />
+                <DemoCard key={demo.path} demo={demo} delay={getWaveDelay(i)} />
               ))}
             </div>
           </>

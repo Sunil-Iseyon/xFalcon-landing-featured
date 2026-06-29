@@ -12,7 +12,7 @@ export function OverviewSection({
   imageSrc,
 }: OverviewSectionProps) {
   return (
-    <section id="overview" className="py-20 lg:py-32 px-6 sm:px-8 lg:px-12 bg-[#F5F8FC]">
+    <section id="overview" className="py-20 lg:py-32 px-4 sm:px-6 lg:px-12 bg-[#F5F8FC]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Content */}
         <div className="space-y-6 order-2 lg:order-1">
@@ -22,7 +22,7 @@ export function OverviewSection({
             </p>
           </MotionReveal>
           <MotionReveal delay={0.08}>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1220]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B1220]">
               {heading}
             </h2>
           </MotionReveal>
@@ -39,7 +39,7 @@ export function OverviewSection({
             <img
               src={imageSrc}
               alt={heading}
-              className="w-full h-96 object-contain bg-[#F8FBFF] rounded-lg"
+              className="w-full h-52 sm:h-64 md:h-80 lg:h-96 object-contain bg-[#F8FBFF] rounded-lg"
             />
           </MotionReveal>
         ) : (

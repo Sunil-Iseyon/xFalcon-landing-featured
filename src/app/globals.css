@@ -509,8 +509,7 @@ button:active:not(:disabled) { transform: scale(.97); }
   display: none;
   margin-top: 1.25rem;
   border-radius: 12px;
-  overflow: hidden;
-  aspect-ratio: 4 / 3;
+  /* No aspect-ratio — height is driven by content so nothing gets clipped */
   border: 1px solid var(--border);
   padding: 18px;
   position: relative;
@@ -535,4 +534,26 @@ button:active:not(:disabled) { transform: scale(.97); }
   .scrolly-viz          { transition: none; }
   .scrolly-dot          { transition: none; }
   .how-dashed-line      { animation: none; }
+}
+
+/* ── Mobile image & media safety ─────────────────────────── */
+/* Ensure plain <img> and <video> tags never exceed their container */
+img, video {
+  max-width: 100%;
+}
+
+/* Prevent any section or card from causing horizontal scroll */
+@media (max-width: 768px) {
+  /* Tables in blog prose scroll horizontally rather than breaking layout */
+  .prose-chat table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Cap image heights in the overview section wrapper */
+  .overview-img-wrap {
+    max-height: 60vw;
+    min-height: 0;
+  }
 }

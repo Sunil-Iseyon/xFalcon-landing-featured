@@ -53,7 +53,7 @@ export interface SecurityAndTrustContent extends LegalPageContent {
  * Falls back to importing directly if file system access is not available
  */
 export async function loadLegalPageContent(
-  pageType: 'privacy-policy' | 'terms-and-conditions' | 'security-and-trust'
+  pageType: 'privacy-policy' | 'terms-of-service' | 'security-and-trust'
 ): Promise<LegalPageContent> {
   try {
     const contentPath = path.join(
@@ -84,8 +84,8 @@ export const legalPages = [
     description: 'Learn how xFalcon collects, uses, and protects your data.',
   },
   {
-    slug: 'terms-and-conditions',
-    title: 'Terms & Conditions',
+    slug: 'terms-of-service',
+    title: 'Terms of Service',
     description: 'Review the terms governing your use of xFalcon services.',
   },
   {

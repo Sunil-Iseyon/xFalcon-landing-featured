@@ -1,5 +1,5 @@
 import { permanentRedirect } from 'next/navigation';
 
 export default function TermsPage() {
-  permanentRedirect('/terms-and-conditions');
+  permanentRedirect('/terms-of-service');
 }
